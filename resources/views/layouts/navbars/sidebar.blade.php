@@ -134,15 +134,11 @@
                 </li>
 
 
-
-                           <li class="nav-item">
-                            <a class="nav-link " href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                                <i class="fas fa-graduation-cap" style="color: #f4645f;"></i>
-                                <span class="nav-link-text" style="color: #f4645f;">{{ __('Courses') }}</span>
-                            </a>
-
-            <div class="collapse " id="navbar-examples">
-                <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/tracks">
+                            <i class="fa fa-code" style="color: #1E7FE5;"></i> {{ __('Tracks') }}
+                         </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-laptop-code" style="color: #1E7FE5;"></i> {{ __('Courses') }}
@@ -160,13 +156,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="fa fa-exclamation" style="color: #1E7FE5;"></i> {{ __('Questions') }}
+                            <i class="fa fa-question" style="color: #1E7FE5;"></i> {{ __('Questions') }}
                         </a>
                     </li>
  
-                </ul>
-            </div>
-        </li>
+          
+    
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
