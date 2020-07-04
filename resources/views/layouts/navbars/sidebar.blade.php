@@ -155,7 +155,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/qustions">
+                        <a class="nav-link" href="/admin/questions">
                             <i class="fa fa-question" style="color: #1E7FE5;"></i> {{ __('Questions') }}
                         </a>
                     </li>
