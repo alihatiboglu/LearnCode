@@ -45,7 +45,7 @@
                                     <tr>
                                         <td>{{\Str::limit( $question->title , 30) }}</td>
                                         <td>{{ \Str::limit( $question->answers , 20) }}</td>
-                                        <td>{{ \Str::limit( $question->rigth_answers, 20)}}</td>
+                                        <td>{{ \Str::limit( $question->right_answer, 20)}}</td>
                                         <td>{{ $question->score }}</td>
                                         <td class="text-right">
                                             <div class="dropdown">

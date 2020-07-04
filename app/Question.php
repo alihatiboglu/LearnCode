@@ -11,6 +11,7 @@ class Question extends Model
     	'answers',
     	'right_answer',
     	'score',
+    	'quiz_id',
     ];
 
     public function quiz(){
