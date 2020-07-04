@@ -140,28 +140,28 @@
                          </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/courses">
                             <i class="fas fa-laptop-code" style="color: #1E7FE5;"></i> {{ __('Courses') }}
                          </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/videos">
                             <i class="fas fa-video" style="color: #1E7FE5;"></i> {{ __('Videos') }}
                          </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/quizzes">
                             <i class="fas fa-book-open" style="color: #1E7FE5;"></i> {{ __('Quizzes') }}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="/admin/qustions">
                             <i class="fa fa-question" style="color: #1E7FE5;"></i> {{ __('Questions') }}
                         </a>
                     </li>
  
           
-    
+   <!--  
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
@@ -172,7 +172,7 @@
                     <a class="nav-link" href="#">
                         <i class="ni ni-circle-08 text-pink"></i> {{ __('Register') }}
                     </a>
-                </li>
+                </li> -->
             </ul>
             <!-- Divider -->
             <hr class="my-3">

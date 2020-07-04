@@ -27,9 +27,9 @@ class TrackController extends Controller
         }
     }
 
-    public function show($id)
+    public function show(Track $track)
     {
-        //
+        return view('admin.tracks.show', compact('track'));
     }
 
     public function edit(Track $track)
