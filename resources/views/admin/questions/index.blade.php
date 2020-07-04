@@ -13,7 +13,7 @@
                                 <h3 class="mb-0">{{ __('Questions') }}</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('quizzes.create') }}" class="btn btn-sm btn-primary">{{ __('Add Question') }}</a>
+                                <a href="{{ route('questions.create') }}" class="btn btn-sm btn-primary">{{ __('Add Question') }}</a>
                             </div>
                         </div>
                     </div>
