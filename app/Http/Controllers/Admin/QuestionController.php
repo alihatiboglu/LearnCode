@@ -39,24 +39,34 @@ class QuestionController extends Controller
         }
 
     }
+    
 
-    public function show($id)
+    public function edit(Question $question)
     {
-        //
+        return view('admin.questions.edit', compact('question'));
     }
 
-    public function edit($id)
+    public function update(Request $request, Question $question)
     {
-        //
+        $rules = [
+            'title' => 'required|min:10|max:1000',
+            'answers' => 'required|min:10|max:1000',
+            'right_answer' => 'required|min:2|max:50',
+            'score' => 'required|integer|in:5,10,15,20,25,30',
+            'quiz_id' => 'required|integer'
+        ];
+
+        $this->validate($request, $rules);
+        if($question->update($request->all())){
+            return redirect('/admin/questions')->withStatus('Question Successfully Updated.');
+        }else{
+            return redirect('/admin/questions/'.$question->id.'/edit')->withStatus('Somthing Worng, please Try Again');
+        }
     }
 
-    public function update(Request $request, $id)
+    public function destroy(Question $question)
     {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        $question->delete();
+        return redirect('/admin/questions')->withStatus('Question Successfully Deleted.');
     }
 }
