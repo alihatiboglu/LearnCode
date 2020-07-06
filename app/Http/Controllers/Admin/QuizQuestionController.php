@@ -12,7 +12,7 @@ class QuizQuestionController extends Controller
 
     public function create(Quiz $quiz)
     {
-        return view('admin.quizzes.createquestion', compact('quiz'));
+        return view('admin.quizzes.ceratequestion', compact('quiz'));
     }
 
 }
