@@ -146,17 +146,17 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/videos">
-                            <i class="fas fa-video" style="color: #1E7FE5;"></i> {{ __('Videos') }}
+                            <i class="fab fa-youtube" style="color: #1E7FE5;"></i> {{ __('Videos') }}
                          </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/quizzes">
-                            <i class="fas fa-book-open" style="color: #1E7FE5;"></i> {{ __('Quizzes') }}
+                            <i class="fas fa-edit text" style="color: #1E7FE5;"></i> {{ __('Quizzes') }}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/questions">
-                            <i class="fa fa-question" style="color: #1E7FE5;"></i> {{ __('Questions') }}
+                            <i class="fa fa-question-circle" style="color: #1E7FE5;"></i> {{ __('Questions') }}
                         </a>
                     </li>
  
