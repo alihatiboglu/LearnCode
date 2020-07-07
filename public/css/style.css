@@ -1,0 +1,45 @@
+/* Main Color: #1c5996; */
+/* Secondary Color: #964b1c; */
+
+
+/* Constant */
+
+
+body {
+	padding-top: 56px;
+}
+
+
+/* Home page */
+
+.search-form {
+	margin-left: 250px;
+}
+.search-form,
+.search-form input {
+	width: 500px !important;
+	border-radius: 0;
+}
+
+.links ul {
+	margin-right: 40px;
+}
+.links ul li {
+	margin-right: 10px;
+}
+
+.navbar  {
+	background-color: #1c5996!important;
+}
+
+.navbar div a.navbar-brand,
+.navbar div ul li a.nav-link  {
+	color: #fff!important;
+}
+
+.navbar span.logo {
+	background-color: #fff;
+	color: #1c5996;
+	padding: 8px;
+	border-radius: 10px 20px;
+}
