@@ -8,7 +8,9 @@
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary shadow border-0">
                     <div class="card-header bg-transparent pb-5">
-                        <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Sign in with') }}</small></div>
+                        <div class="text-muted text-center mt-2 mb-3">
+                            <a style="font-size: 50px; font-family: 'Loto'; color: #1c5996; margin-top: 60px; margin-bottom: 10px;" class="navbar-brand" href="{{ route('home') }}"><span style="background-color: #1c5996; color: #fff; padding: 8px; border-radius: 10px 20px; font-size: 50px;" class="logo">LC</span> LearnCode</a><br>
+                            <small>{{ __('Sign in with') }}</small></div>
                         <div class="btn-wrapper text-center">
                             <a href="#" class="btn btn-neutral btn-icon">
                                 <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/github.svg"></span>
@@ -26,10 +28,10 @@
                                 <a href="{{ route('register') }}">{{ __('Create new account') }}</a> {{ __('OR Sign in with these credentials:') }}
                             </small>
                             <br>
-                            <small>
+                         <!--    <small>
                                 {{ __('Username') }} <strong>admin@argon.com</strong>
                                 {{ __('Password') }} <strong>secret</strong>
-                            </small>
+                            </small> -->
                         </div>
                         <form role="form" method="POST" action="{{ route('login') }}">
                             @csrf

@@ -12,14 +12,49 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*User Route*/
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
+Route::get('/', 'HomeController@index')->name('home');
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/courses/{slug}', 'CourseController@index');
+
+Route::post('/courses/{slug}', 'CourseController@enroll');
+
+Route::get('/courses/{slug}/quizzes/{name}', 'QuizController@index');
+
+Route::post('/courses/{slug}/quizzes/{name}', 'QuizController@submit');
+
+Route::get('/search', 'SearchController@index');
+
+Route::get('/tracks/{name}', 'TrackController@index');
+
+Route::get('/mycourses', 'MyCoursesController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
+Route::post('/profile', 'ProfileController@update');
+
+Route::get('/allcourses', 'AllCoursesController@index');
+
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact', 'ContactController@send');
+
+
+
+// logout
+Route::get('/logout', function(){
+	if(\Auth::check()){
+		\Auth::logout();
+		return redirect('/home');
+	}else{
+		return redirect('/');
+	}
+})->name('logout');
+// logout
 
 
 /*Admin Route Start*/

@@ -9,7 +9,9 @@
             <div class="col-lg-6 col-md-8">
                 <div class="card bg-secondary shadow border-0">
                     <div class="card-header bg-transparent pb-5">
-                        <div class="text-muted text-center mt-2 mb-4"><small>{{ __('Sign up with') }}</small></div>
+                        <div class="text-muted text-center mt-2 mb-4">
+                            <a style="font-size: 50px; font-family: 'Loto'; color: #1c5996; margin-top: 60px; margin-bottom: 10px;" class="navbar-brand" href="{{ route('home') }}"><span style="background-color: #1c5996; color: #fff; padding: 8px; border-radius: 10px 20px; font-size: 50px;" class="logo">LC</span> LearnCode</a><br>
+                            <small>{{ __('Sign up with') }}</small></div>
                         <div class="text-center">
                             <a href="#" class="btn btn-neutral btn-icon mr-4">
                                 <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/github.svg"></span>

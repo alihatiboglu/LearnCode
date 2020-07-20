@@ -37,6 +37,7 @@
                                     <th scope="col">{{ __('Answers') }}</th>
                                     <th scope="col">{{ __('Rigth Answers') }}</th>
                                     <th scope="col">{{ __('Score') }}</th>
+                                    <th scope="col">{{ __('Type') }}</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
@@ -47,6 +48,7 @@
                                         <td>{{ \Str::limit( $question->answers , 20) }}</td>
                                         <td>{{ \Str::limit( $question->right_answer, 20)}}</td>
                                         <td>{{ $question->score }}</td>
+                                        <td>{{ $question->type }}</td>
                                         <td class="text-right">
                                             <div class="dropdown">
                                                 <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

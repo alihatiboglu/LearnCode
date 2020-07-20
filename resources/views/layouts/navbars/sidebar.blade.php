@@ -5,17 +5,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="{{ route('home') }}">
-            <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
-        </a>
+        <a style="font-size: 30px; font-family: 'Loto'; color: #1c5996;" class="navbar-brand" href="{{ route('home') }}"><span style="background-color: #1c5996; color: #fff; padding: 8px; border-radius: 10px 20px; font-size: 30px;" class="logo">LC</span> LearnCode</a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="media align-items-center">
-                        <span class="avatar avatar-sm rounded-circle">
-                        <img alt="Image placeholder" src="{{ asset('argon') }}/img/theme/team-1-800x800.jpg">
-                        </span>
+                        <a class="navbar-brand" href="/home"><span class="logo">LC</span> Learncode</a>
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
