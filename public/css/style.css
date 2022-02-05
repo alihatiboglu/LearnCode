@@ -48,7 +48,7 @@ body {
 /*home photo style*/
 .home_picture {
 	height: 600px;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../images/home_default2.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../images/home_default.jpg');
 	background-repeat: no-repeat;
 	background-origin: content-box;
 	background-size: cover;
@@ -531,7 +531,13 @@ footer div.footer-copyright a{
 	border-radius: 7px;
 }
 .search-courses .course .course-info{
-	padding: 10px;
+	padding: 20px;
+}
+.search-courses .course .course-info h5{
+	margin-bottom: 10px;
+}
+.search-courses .course .course-info p{
+	margin-bottom: 10px;
 }
 .search-courses .course .course-info h6 span .free-badge,
 .search-courses .course .course-info h6 span .paid-badge{
@@ -708,6 +714,3 @@ footer div.footer-copyright a{
 	opacity: .9;
 }
 /*all courses style*/
-
-
-

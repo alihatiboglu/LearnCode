@@ -92,7 +92,8 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary mt-4">{{ __('Create account') }}</button>
-                            </div>
+                            </div><br>
+                            <a href="/login" style="margin-left: 195px; padding-top: 10px;">Login</a>
                         </form>
                     </div>
                 </div>

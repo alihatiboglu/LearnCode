@@ -62,21 +62,21 @@
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact</a>
             </li>
-            <li class="nav-item dropdown">
+               <li class="nav-item dropdown">
+                @auth
                 <a class="nav-link @auth dropdown-toggle @endauth" href="/login" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    @auth
                     {{\Str::limit(auth()->user()->name, 10)}}
-                    @endauth
-                    @guest
-                    Login
-                    @endguest
                 </a>
+                @endauth
+                @guest
+                    <a class="nav-link" href="/login">Login</a>
+                @endguest
                 @auth
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a style="font-family: 'Lato';" class="dropdown-item" href="/profile">Profile</a>
-                    <a style="font-family: 'Lato';" class="dropdown-item" href="/mycourses">My Courses</a>
+                    <a class="dropdown-item" href="/profile">Profile</a>
+                    <a class="dropdown-item" href="/mycourses">My Courses</a>
                     <div class="dropdown-divider"></div>
-                    <a style="font-family: 'Lato';" class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+                    <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
                 </div>
                 @endauth
             </li>

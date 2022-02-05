@@ -46,7 +46,12 @@
 								<li>Email : {{$user->email}}</li><hr>
 								<li>Score : {{$user->score}} Points</li><hr>
 								<li>Person Type : <i class="fas fa-user-shield" style="color: #1c5996;"></i> {{$user->admin == 1 ? 'Admin' : 'User'}}</li><hr>
-								<li class="{{$user->email_verified_at ? 'text-success' : 'text-danger'}}">Verifition : {{$user->email_verified_at ? 'Verified' : 'Unverified'}}</li><hr>
+								<table><tr>
+									<td>Verifition :</td>
+									<td class="{{$user->email_verified_at ? 'text-success' : 'text-danger'}}"> &nbsp; {{$user->email_verified_at ? 'Verified' : 'Unverified'}}</td>
+
+								</tr></table>
+								<hr>
 								<li>Member At : <span>{{$user->created_at->diffForHumans()}}</span></li><hr>
 							</ul>
 						</div>

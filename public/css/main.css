@@ -132,12 +132,6 @@ iframe {
   min-height: 100%;
   padding: 15px;
 
-/*  background: #009bff;
-  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-  background: -o-linear-gradient(left, #0072ff, #00c6ff);
-  background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-  background: linear-gradient(left, #0072ff, #00c6ff)*/;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -276,7 +270,7 @@ textarea.input1 + .shadow-input1 {
   min-width: 193px;
   height: 50px;
   border-radius: 25px;
-  background: #1c5996;;
+  background: #57b846;
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
@@ -306,7 +300,7 @@ textarea.input1 + .shadow-input1 {
 }
 
 .contact1-form-btn:hover {
-  background: #259fc8;
+  background: #333333;
 }
 
 .contact1-form-btn:hover i {

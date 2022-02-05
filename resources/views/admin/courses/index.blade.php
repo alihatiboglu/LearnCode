@@ -33,7 +33,7 @@
                       
                         @foreach($courses as $course)
                         
-                        <div class="col-sm-4" style=" max-height: 320px;">
+                        <div class="col-sm-4" style=" max-height: 320px; margin-bottom: 20px;">
                             <div class="card" style="width: 18rem;">
                                 @if($course->photo)
                                 <img height="150" width="180" src="/images/{{$course->photo->filename}}" class="card-img-top" alt="Course Photo">
